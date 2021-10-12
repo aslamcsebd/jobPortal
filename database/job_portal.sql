@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Aug 07, 2019 at 05:34 PM
--- Server version: 5.7.24
--- PHP Version: 7.2.11
+-- Host: 127.0.0.1
+-- Generation Time: Oct 12, 2021 at 02:24 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -69,11 +68,11 @@ CREATE TABLE `candidate` (
 --
 
 INSERT INTO `candidate` (`id`, `name`, `father`, `mother`, `gender`, `dob`, `blood_Group`, `mobile`, `email`, `password`, `division`, `image`, `address`) VALUES
-(7, 'Md Aslam2', 'Saiful Islam2', 'Dalia Begum', 'Female', '2019-03-05', 'A+', '01680607294', 'candidate2@gmail.com', '1234', 'Chittagong', '', 'agrabad'),
-(8, 'Md Aslam3', 'Saiful Islam3', 'Dalia Begum3', 'Male', '2019-08-04', 'A-', '016806072933', 'candidate3@gmail.com', '1234', 'Rangpur', '../profile_picture/12.jpg', 'agrabad'),
-(9, 'Md Aslam4', 'Saiful Islam4', 'Dalia Begum4', 'Female', '2019-07-29', 'O+', '01685978546', 'candidate4@gmail.com', '1234', 'Khulna', '../profile_picture/12.jpg', 'agrabad'),
-(10, 'Md Aslam5', 'Saiful Islam5', 'Dalia Begum5', 'Female', '2019-07-29', 'O-', '016806072988', 'candidate5@gmail.com', '1234', 'Mymensingh', '', 'agrabad'),
-(11, 'Md Aslam6', 'Saiful Islam6', 'Dalia Begum6', 'Male', '2019-07-29', 'O-', '018317587998', 'candidate6@gmail.com', '1234', 'Rajshahi', '', 'agrabad');
+(7, 'Asma', 'Father', 'Mother', 'Female', '2019-03-05', 'A+', '01680607294', 'candidate@gmail.com', '1234', 'Chittagong', '', 'agrabad'),
+(8, 'Md Aslam3', 'Father', 'Mother', 'Male', '2019-08-04', 'A-', '016806072933', 'candidate3@gmail.com', '1234', 'Rangpur', '../profile_picture/12.jpg', 'agrabad'),
+(9, 'Asma2', 'Father', 'Mother', 'Female', '2019-07-29', 'O+', '01685978546', 'candidate4@gmail.com', '1234', 'Khulna', '../profile_picture/13.jpg', 'agrabad'),
+(10, 'Asma2', 'Father', 'Mother', 'Female', '2019-07-29', 'O-', '016806072988', 'candidate5@gmail.com', '1234', 'Mymensingh', '', 'agrabad'),
+(11, 'Md Aslam', 'Father', 'Mother', 'Male', '2019-07-29', 'O-', '018317587998', 'candidate6@gmail.com', '1234', 'Rajshahi', '../profile_picture/14.jpg', 'agrabad');
 
 -- --------------------------------------------------------
 
@@ -281,7 +280,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `candidate`
 --
 ALTER TABLE `candidate`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `company`

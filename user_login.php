@@ -1,5 +1,7 @@
 <?php
-
+  include('db_connect.php');
+     $conn=db();
+    session_start();
 //if (isset($_SESSION['email']))
 //{
 //    header("location:admin/dashboard.php");
@@ -39,9 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     if($status=="OK"){
 
 
-     include('db_connect.php');
-     $conn=db();
-    session_start();
+   
     
 
         $result=mysqli_query($conn,"SELECT * FROM admin WHERE email='$email' and password='$password'");
@@ -225,6 +225,54 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 									<input class="btn_1" type="submit" value="Login">
 								</div>
 							</div>
+
+                     <style type="text/css">
+                        .user .table td, .user .table th { padding: .3rem;}
+                        .user .table td{background-color: cyan;}
+                     </style>
+                     <div class="container user">
+                        <table class="table table-bordered text-center">
+                           <thead>
+                              <tr class="bg-warning">
+                                 <th>User Type</th>
+                                 <th>Email</th>
+                                 <th>Password</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Admin</td>
+                                 <?php                   
+                                    $sql  ="select * from admin LIMIT 1";
+                                    $result  =  mysqli_query($conn, $sql);
+                                    while($row = mysqli_fetch_assoc($result)) { ?>
+                                       <td><?= $row['email'] ?></td>
+                                       <td><?= $row['password'] ?></td>
+                                 <?php } ?>
+                              </tr>
+                              <tr>
+                                 <td>User</td>
+                                 <?php                   
+                                    $sql  ="select * from candidate LIMIT 1";
+                                    $result  =  mysqli_query($conn, $sql);
+                                    while($row = mysqli_fetch_assoc($result)) { ?>
+                                       <td><?= $row['email'] ?></td>
+                                       <td><?= $row['password'] ?></td>
+                                 <?php } ?>
+                              </tr>
+                              <tr>
+                                 <td>Company</td>
+                                 <?php                   
+                                    $sql  ="select * from company LIMIT 1";
+                                    $result  =  mysqli_query($conn, $sql);
+                                    while($row = mysqli_fetch_assoc($result)) { ?>
+                                       <td><?= $row['email'] ?></td>
+                                       <td><?= $row['password'] ?></td>
+                                 <?php } ?>
+                              </tr>
+                           </tbody>
+                        </table>                  
+                     </div>
 						</div>
 					</form>
 					<p class="text-center link_bright">Do not have an account yet? <a href="user_register.php"><strong>Register now!</strong></a></p>

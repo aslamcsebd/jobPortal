@@ -306,7 +306,7 @@
             <div class="col-lg-3 col-md-4">
                 <h5>Contact with Us</h5>
                 <ul class="contacts">
-                    <li><a href="tel://01621747060"><i class="icon_mobile"></i>+88 01621747060</a></li>
+                    <li><a href="tel://01680607293"><i class="icon_mobile"></i>+88 01680607293</a></li>
 
                     <li><a href="mailto:info@jobsportal.com"><i class="icon_mail_alt"></i> info@Jobs Portal.com</a>
                     </li>

@@ -186,7 +186,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
-<!-- <div class="se-pre-con"></div> <!--For preloader-->
+<!-- <div class="se-pre-con"></div> For preloader-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -273,7 +273,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          
 
             <div class="form-group">
-                <div class="col-xs-10">
+                <div class="col-xs-7 col-xs-offset-2">
 
                     <div class="input-group ">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -311,7 +311,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <br>
                     <div class="input-group ">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                        <input type="text" class="form-control" name="address" placeholder="Enter JobsAddress">
+                        <input type="text" class="form-control" name="address" placeholder="Enter Jobs Address">
 
                     </div>
 
@@ -372,7 +372,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <div class="input-group ">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                        <textarea class="form-control" name="description" placeholder="Enter JobsDescription" rows="3"
+                        <textarea class="form-control" name="description" placeholder="Enter Jobs Description" rows="3"
                                   id="comment"></textarea>
 
                     </div>
